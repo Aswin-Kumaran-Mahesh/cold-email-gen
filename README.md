@@ -1,31 +1,36 @@
 # ❄️ Cold Email Generator
 
-LLM powered tool that generates personalized cold emails for recruiters, hiring managers, or networking outreach based on a few simple inputs.
+AI powered Streamlit app that generates personalized cold emails for recruiters, hiring managers, and networking outreach.
+
+**Live app:** https://cold-email-gen-aswin.streamlit.app/
 
 ---
 
-## 🚀 What it does
+## 💡 What this app does
 
-Given:
-- Your target (recruiter / hiring manager / founder)
-- The role or context (internship, full time, collab, etc.)
-- Your skills / projects
-- Desired tone
+This project helps you quickly draft high quality cold emails by combining:
 
-the app calls an LLM through the Groq HTTP API and returns a ready to edit cold email that is:
+- Your role or goal (internship, full time, networking, etc.)
+- The person or company you are reaching out to
+- Your skills, experience, or project highlights
+- The tone you want (professional, friendly, confident, etc.)
 
-- Personalized to the company or person
-- Focused on your relevant skills
-- Structured with a clear call to action
+The app sends this information to an LLM via the Groq API and returns a clean, structured email that you can copy, tweak, and send.
+
+Typical use cases:
+
+- Reaching out to data science / ML recruiters  
+- Following up after a career fair or event  
+- Sending cold intros to hiring managers or founders  
 
 ---
 
 ## 🧱 Tech Stack
 
-- Python  
-- Groq HTTP API (LLM backend)  
-- `requests` for HTTP calls  
-- Simple script based interface (can be wrapped in a UI later)
+- **Python**
+- **Streamlit** for the web UI
+- **Groq API** as the LLM backend
+- **Requests** for HTTP calls
 
 ---
 
@@ -33,6 +38,6 @@ the app calls an LLM through the Groq HTTP API and returns a ready to edit cold 
 
 ```text
 cold-email-gen/
-├── app.py            # Main script: prompt template, Groq API call, email generation logic
+├── app.py            # Streamlit app: UI + Groq API call + email generation logic
 ├── requirements.txt  # Python dependencies
-└── README.md         # Project documentation (you are here)
+└── README.md         # Project overview and usage instructions
