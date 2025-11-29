@@ -1,19 +1,22 @@
 # ❄️ Cold Email Generator
 
-Generate personalized cold emails for recruiters, hiring managers, and networking outreach using an LLM, with a simple Python app that calls the Groq HTTP API.
+LLM powered tool that generates personalized cold emails for recruiters, hiring managers, or networking outreach based on a few simple inputs.
 
 ---
 
-## 💡 What it does
+## 🚀 What it does
 
-This app helps you quickly create targeted cold emails by taking a few inputs and sending them to an LLM:
+Given:
+- Your target (recruiter / hiring manager / founder)
+- The role or context (internship, full time, collab, etc.)
+- Your skills / projects
+- Desired tone
 
-- Your role or goal (internship, full time, networking, collab, etc.)
-- Company or person you are emailing
-- Your relevant skills or experience
-- Tone and style you want
+the app calls an LLM through the Groq HTTP API and returns a ready to edit cold email that is:
 
-The app then returns a cleaned, structured email that you can copy, tweak, and send.
+- Personalized to the company or person
+- Focused on your relevant skills
+- Structured with a clear call to action
 
 ---
 
@@ -21,15 +24,15 @@ The app then returns a cleaned, structured email that you can copy, tweak, and s
 
 - Python  
 - Groq HTTP API (LLM backend)  
-- `requests` for API calls  
-- CLI / script based app (can be wrapped in a UI later)
+- `requests` for HTTP calls  
+- Simple script based interface (can be wrapped in a UI later)
 
 ---
 
-## ⚙️ Setup
+## 📂 Repository structure
 
-1. **Clone the repo**
-
-```bash
-git clone https://github.com/Aswin-Kumaran-Mahesh/cold-email-gen.git
-cd cold-email-gen
+```text
+cold-email-gen/
+├── app.py            # Main script: prompt template, Groq API call, email generation logic
+├── requirements.txt  # Python dependencies
+└── README.md         # Project documentation (you are here)
